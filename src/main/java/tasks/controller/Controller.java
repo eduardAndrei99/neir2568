@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
 import tasks.services.DateService;
-import tasks.services.TaskIO;
+import tasks.utils.TaskIO;
 import tasks.services.TasksService;
 import tasks.view.Main;
 
@@ -108,7 +108,7 @@ public class Controller {
     @FXML
     public void deleteTask(){
         Task toDelete = (Task)tasks.getSelectionModel().getSelectedItem();
-        tasksList.remove(toDelete);
+        service.remove(toDelete);
         TaskIO.rewriteFile(tasksList);
     }
     @FXML
@@ -135,7 +135,7 @@ public class Controller {
 
         Iterable<Task> filtered =  service.filterTasks(start, end);
 
-        ObservableList<Task> observableTasks = FXCollections.observableList((ArrayList)filtered);
+        ObservableList observableTasks = FXCollections.observableList((ArrayList)filtered);
         tasks.setItems(observableTasks);
         updateCountLabel(observableTasks);
     }
@@ -146,7 +146,6 @@ public class Controller {
     @FXML
     public void resetFilteredTasks(){
         tasks.setItems(tasksList);
-
     }
 
 }

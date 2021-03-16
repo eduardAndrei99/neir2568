@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import org.apache.log4j.Logger;
 import tasks.model.Task;
 import tasks.services.DateService;
-import tasks.services.TaskIO;
+import tasks.utils.TaskIO;
 import tasks.services.TasksService;
 
 import java.io.IOException;
@@ -78,12 +78,10 @@ public class NewEditController {
 
     public void setCurrentTask(Task task){
         this.currentTask=task;
-        switch (clickedButton.getId()){
-            case  "btnNew" : initNewWindow("New Task");
-                break;
-            case "btnEdit" : initEditWindow("Edit Task");
-                break;
-        }
+        if(clickedButton.getId().equals("btnNew"))
+            initNewWindow();
+        else
+            initEditWindow();
     }
 
     @FXML
@@ -97,22 +95,22 @@ public class NewEditController {
 //        }
 
     }
-    private void initNewWindow(String title){
-        currentStage.setTitle(title);
+    private void initNewWindow(){
+        currentStage.setTitle("New Task");
         datePickerStart.setValue(LocalDate.now());
         txtFieldTimeStart.setText(DEFAULT_START_TIME);
     }
 
-    private void initEditWindow(String title){
-        currentStage.setTitle(title);
+    private void initEditWindow(){
+        currentStage.setTitle("Edit Task");
         fieldTitle.setText(currentTask.getTitle());
-        datePickerStart.setValue(dateService.getLocalDateValueFromDate(currentTask.getStartTime()));
+        datePickerStart.setValue(DateService.getLocalDateValueFromDate(currentTask.getStartTime()));
         txtFieldTimeStart.setText(dateService.getTimeOfTheDayFromDate(currentTask.getStartTime()));
 
         if (currentTask.isRepeated()){
             checkBoxRepeated.setSelected(true);
             hideRepeatedTaskModule(false);
-            datePickerEnd.setValue(dateService.getLocalDateValueFromDate(currentTask.getEndTime()));
+            datePickerEnd.setValue(DateService.getLocalDateValueFromDate(currentTask.getEndTime()));
             fieldInterval.setText(service.getIntervalInHours(currentTask));
             txtFieldTimeEnd.setText(dateService.getTimeOfTheDayFromDate(currentTask.getEndTime()));
         }

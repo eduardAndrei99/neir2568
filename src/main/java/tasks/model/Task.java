@@ -1,7 +1,7 @@
 package tasks.model;
 
 import org.apache.log4j.Logger;
-import tasks.services.TaskIO;
+import tasks.utils.TaskIO;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
@@ -67,10 +67,10 @@ public class Task implements Serializable, Cloneable {
         return time;
     }
 
-    public void setTime(Date time) {
-        this.time = time;
-        this.start = time;
-        this.end = time;
+    public void setTime(Date newDate) {
+        this.time = newDate;
+        this.start = newDate;
+        this.end = newDate;
         this.interval = 0;
     }
 
@@ -81,8 +81,9 @@ public class Task implements Serializable, Cloneable {
     public Date getEndTime() {
         return end;
     }
+
     public int getRepeatInterval(){
-        return interval > 0 ? interval : 0;
+        return Math.max(interval, 0);
     }
 
     public void setTime(Date start, Date end, int interval){
@@ -105,11 +106,11 @@ public class Task implements Serializable, Cloneable {
                 return start;
             }
             if ((current.after(start) || current.equals(start)) && (current.before(end) || current.equals(end))){
-                for (long i = start.getTime(); i <= end.getTime(); i += interval*1000){
-                    if (current.equals(timeAfter)) return new Date(timeAfter.getTime()+interval*1000);
+                for (long i = start.getTime(); i <= end.getTime(); i += interval* 1000L){
+                    if (current.equals(timeAfter)) return new Date(timeAfter.getTime()+interval* 1000L);
                     if (current.after(timeBefore) && current.before(timeAfter)) return timeBefore;//return timeAfter
                     timeBefore = timeAfter;
-                    timeAfter = new Date(timeAfter.getTime()+ interval*1000);
+                    timeAfter = new Date(timeAfter.getTime()+ interval* 1000L);
                 }
             }
         }
