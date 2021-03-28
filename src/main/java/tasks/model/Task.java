@@ -23,6 +23,10 @@ public class Task implements Serializable, Cloneable {
         return sdf;
     }
     public Task(String title, Date time){
+        if (title == "") {
+            log.error("title is empty");
+            throw new IllegalArgumentException("Title cannot be empty");
+        }
         if (time.getTime() < 0) {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
