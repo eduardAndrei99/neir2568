@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><title>testspec Prj235 - mfir2561_BBT</title>
+<link type="text/css" rel="stylesheet" href="http://localhost:81/testlink/gui/themes/default/css/tl_documents.css" />
+<style type="text/css" media="print">.notprintable { display:none;}</style>
+</head>
+<body>
+<div>
+<div style="float:right;">TestLink Community [configure $tlCfg-&gt;document_generator-&gt;company_name]</div>
+<div>&nbsp;</div><hr />
+<p style="text-align: center;"><img alt="TestLink logo" title="configure using $tlCfg->document_generator->company_logo"  width= height= src="http://localhost:81/testlink/gui/themes/default/images/tl-logo-transparent-25.png" /></p></div>
+<div class="doc_title"><p>Test Specification</p></div>
+<div class="doc_title" style="text-align:left;margin: auto;"><p>Test Project: Prj235<br/>Test Suite: Prj235 - mfir2561_BBT</p></div>
+<div class="summary"><p id="printedby">Printed by TestLink on 28/03/2021</p></div>
+<div class="pagefooter" id="copyright">2012 &copy; TestLink Community</div>
+<h1 class="general" style="page-break-before: always">Table Of Contents</h1><div class="toc"><p style="padding-left: 20px;"><b><a href="#toc_1">1.mfir2561_BBT</a></b></p>
+<p style="padding-left: 45px;"><a href="#toc_tc2779">235-26: addTaskECPValid</a></p><p style="padding-left: 45px;"><a href="#toc_tc2783">235-27: addTaskECPInvalid</a></p><p style="padding-left: 45px;"><a href="#toc_tc2787">235-28: addTaskBVA_TC1</a></p><p style="padding-left: 45px;"><a href="#toc_tc2789">235-29: addTaskBVA_TC2</a></p><p style="padding-left: 45px;"><a href="#toc_tc2791">235-30: addTaskBVA_TC3</a></p><p style="padding-left: 45px;"><a href="#toc_tc2795">235-31: addTaskBVA_TC4</a></p><p style="padding-left: 45px;"><a href="#toc_tc2799">235-32: addTaskBVA_TC5</a></p><p style="padding-left: 45px;"><a href="#toc_tc2801">235-33: addTaskBVA_TC6</a></p><p style="padding-left: 45px;"><a href="#toc_tc2803">235-34: addTaskBVA_TC7</a></p><p style="padding-left: 45px;"><a href="#toc_tc2805">235-35: addTaskBVA_TC8</a></p></div><h1 class="doclevel" >Scope</h1>
+<div class="txtlevel"><p>project for group 235</p></div>
+ <br/><a name='toc_1'></a>
+<h1 class='doclevel'>1.Test Suite : mfir2561_BBT</h1>
+<div><p>Suita de teste pentru adaugarea unui Task.</p>
+</div><a name="toc_tc2779"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-26: addTaskECPValid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Day&rdquo; o valoare &icirc;ntre [0, 31]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 15.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Day aparține [0, 31].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3">0.00</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2783"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-27: addTaskECPInvalid&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Day&rdquo; o valoare &icirc;ntre [0, 31]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 40.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Day aparține [0, 31]</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2787"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-28: addTaskBVA_TC1&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 0.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține [1, 12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2789"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-29: addTaskBVA_TC2&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 1.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține numerelor intregi din intervalul&nbsp;[1, 12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2791"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-30: addTaskBVA_TC3&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 0.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține &nbsp;[1, 12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2795"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-31: addTaskBVA_TC4&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 1.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține [1, 12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2799"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-32: addTaskBVA_TC5&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 2.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month apartine [1,12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2801"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-33: addTaskBVA_TC6&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 11.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține [1, 12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2803"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-34: addTaskBVA_TC7&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 12.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține [1, 12]</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+<a name="toc_tc2805"></a><p>&nbsp;</p><div> <table class="tc" width="90%" ><tr><th colspan="4">Test Case 235-35: addTaskBVA_TC8&nbsp;<span style="font-size: 80%;">[Version  : 1]</span></th></tr>
+<tr><td width="20%" valign="top"><span class="label">Author:</span></td><td colspan="3">mfir2561</td></tr>
+<tr><td colspan="4"><span class="label">Summary:</span><br /><p>Field-ul &bdquo;Time&rdquo; din panoul de adăugare trebuie să aibă la &bdquo;Month&rdquo; o valoare &icirc;ntre [1, 12]. &Icirc;n caz contrar, ar trebui ca utilizatorul să fie informat. Se va testa cu valoarea 13.</p>
+</td></tr><tr><td colspan="4"><span class="label">Preconditions:</span><br /><p>Month aparține [1, 12].</p>
+</td></tr><tr><td width="20%" valign="top"><span class="label">Execution type:</span></td><td colspan="3">Manual</td></tr>
+<tr><td width="20%" valign="top"><span class="label">Estimated exec. duration (min):</span></td><td colspan="3"></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Importance:</span></td><td colspan="3">Medium</td></tr>
+<tr><td colspan="4"></td></tr><tr><td width="20%" valign="top"><span class="label">Requirements</span><td colspan="3">&nbsp;None<br /></td></tr>
+<tr><td width="20%" valign="top"><span class="label">Keywords:</span></td><td colspan="3">&nbsp;None<br/></td></tr>
+</table>
+</div>
+
+</body>
+</html>
