@@ -6,6 +6,7 @@ import tasks.utils.ArrayTaskList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class TasksService {
@@ -47,9 +48,15 @@ public class TasksService {
 
     public Iterable<Task> filterTasks(Date start, Date end){
         TasksOperations tasksOps = new TasksOperations(getObservableList());
-        //Iterable<Task> filtered = tasks.incoming(start, end);
 
-        return tasksOps.incoming(start,end);
+        try {
+            Iterable<Task> filtered = tasksOps.incoming(start, end);
+            return  filtered;
+        }
+        catch (Exception ex) {
+            ArrayList<Task> incomingTasks = new ArrayList<>();
+            return incomingTasks;
+        }
     }
 
     public void remove(Task toDelete){
