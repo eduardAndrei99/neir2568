@@ -15,6 +15,7 @@ public class FilterTasksTest {
     @Test
     @DisplayName("F02_TC01")
     void F02_TC01() {
+
         ArrayTaskList list = new ArrayTaskList();
         list.add(new Task("task1", new Date(1500)));
         TasksService tasksService = new TasksService(list);
